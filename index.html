@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sahil Laur - Full Stack Developer Portfolio">
+
+    <title>Sahil Laur | Full Stack Developer</title>
+
+    <!-- Website favicon: developer icon -->
+    <link rel="icon" href="assets/code-icon.svg" type="image/svg+xml">
+
+    <!-- External CSS file controls the complete design -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <!-- Logo, navigation links, theme button and mobile menu -->
+    <header class="navbar">
+        <a href="#home" class="logo">Sahil<span>.</span></a>
+
+        <!-- Mobile menu button appears on smaller screens -->
+        <button id="menuBtn" class="menu-btn" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav id="navLinks" class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#tools">Tools</a>
+            <a href="#projects">Projects</a>
+            <a href="#connect">Contact</a>
+
+            <!-- Download your resume from the project folder -->
+            <a href="resume.pdf" download class="resume-link">Resume ↓</a>
+        </nav>
+
+        <!-- JavaScript switches between dark and light themes -->
+        <button id="themeBtn" class="theme-btn" aria-label="Switch theme">
+            ☀
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HOME / HERO ================= -->
+        <!-- Main introduction and important profile links -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <p class="eyebrow">HELLO, I'M</p>
+
+                <h1>Sahil <span>Laur</span></h1>
+
+                <h2>Full Stack Developer</h2>
+
+                <p class="hero-description">
+                    I build responsive web experiences and work on practical
+                    projects using Java, Spring Boot, JavaScript and MySQL.
+                    I'm continuously improving my development skills.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore Projects
+                    </a>
+
+                    <a href="resume.pdf" download class="btn btn-outline">
+                        Download Resume
+                    </a>
+                </div>
+
+                <!-- Social profile shortcuts -->
+                <div class="social-links">
+                    <a href="https://github.com/Sahillaur"
+                       target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                    <a href="https://www.linkedin.com/in/sahil-laur-2730983bb"
+                       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+                    <a href="https://leetcode.com/u/sahil_laur/"
+                       target="_blank" rel="noopener noreferrer">LeetCode ↗</a>
+                </div>
+            </div>
+
+            <!-- Decorative code card on the right side -->
+            <div class="hero-card">
+                <div class="terminal-header">
+                    <span></span><span></span><span></span>
+                    <p>sahil.java</p>
+                </div>
+
+                <div class="terminal-code">
+                    <p><span class="code-purple">class</span> Sahil {</p>
+                    <p class="indent"><span class="code-purple">String</span> role =</p>
+                    <p class="indent code-green">"Full Stack Developer";</p>
+                    <p class="indent"><span class="code-purple">String</span> focus =</p>
+                    <p class="indent code-green">"Building useful projects";</p>
+                    <p class="indent"><span class="code-purple">boolean</span> learning =</p>
+                    <p class="indent code-orange">true;</p>
+                    <p>}</p>
+                </div>
+
+                <div class="terminal-footer">
+                    <span class="status-dot"></span>
+                    Always learning, always building
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <!-- Short introduction about your development journey -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">&lt;/&gt;</div>
+
+                <div>
+                    <h3>Developer in Progress</h3>
+
+                    <p>
+                        I'm focused on Full Stack Development and enjoy turning
+                        ideas into working applications. I work with Java,
+                        Spring Boot, JavaScript and MySQL, while improving my
+                        problem-solving skills through coding practice.
+                    </p>
+
+                    <p>
+                        My goal is to build clean, reliable and user-friendly
+                        applications while learning new technologies through
+                        hands-on projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+        <!-- Place the skills banner image at assets/skills-banner.png -->
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">MY TECH STACK</p>
+                <h2>Skills & <span>Technologies</span></h2>
+                <p>Technologies I use while learning and building projects.</p>
+            </div>
+
+            <!-- Decorative banner above the skills -->
+            <div class="skills-banner">
+                <img src="assets/skills-banner.png.jpg"
+                     alt="Programming and software development workspace">
+                <div class="banner-overlay">
+                    <h3>Build. Learn. Improve.</h3>
+                    <p>Turning code into practical solutions.</p>
+                </div>
+            </div>
+
+            <!-- Each skill card displays a local logo and its name -->
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <img src="assets/java.png.jpg" alt="Java logo">
+                    <h3>Java</h3>
+                    <p>Programming</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/spring-boot.png.jpg" alt="Spring Boot logo">
+                    <h3>Spring Boot</h3>
+                    <p>Backend Development</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/spring-security.png.jpg" alt="Spring Security logo">
+                    <h3>Spring Security</h3>
+                    <p>Application Security</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/jwt.png.jpg" alt="JWT logo">
+                    <h3>JWT Authentication</h3>
+                    <p>Token-based Authentication</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/javascript.png.jpg" alt="JavaScript logo">
+                    <h3>JavaScript</h3>
+                    <p>Frontend Development</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/mysql.png.jpg" alt="MySQL logo">
+                    <h3>MySQL</h3>
+                    <p>Database</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/html5.png.jpg" alt="HTML logo">
+                    <h3>HTML</h3>
+                    <p>Web Structure</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/css3.png.jpg" alt="CSS logo">
+                    <h3>CSS</h3>
+                    <p>Web Styling</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ================= TOOLS ================= -->
+        <!-- Development software and tools you work with -->
+        <section id="tools" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">MY WORKSPACE</p>
+                <h2>Tools I <span>Use</span></h2>
+            </div>
+
+            <div class="tools-grid">
+                <article class="tool-card">
+                    <img src="assets/intellij.png.jpg" alt="IntelliJ IDEA logo">
+                    <h3>IntelliJ IDEA</h3>
+                </article>
+
+                <article class="tool-card">
+                    <img src="assets/postman.png.jpg" alt="Postman logo">
+                    <h3>Postman</h3>
+                </article>
+
+                <article class="tool-card">
+                    <img src="assets/vscode.png.jpg" alt="Visual Studio Code logo">
+                    <h3>VS Code</h3>
+                </article>
+
+                <article class="tool-card">
+                    <img src="assets/github.png.jpg" alt="GitHub logo">
+                    <h3>GitHub</h3>
+                </article>
+
+                <article class="tool-card">
+                    <img src="assets/eclipse.png.jpg" alt="Eclipse IDE logo">
+                    <h3>Eclipse</h3>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+        <!-- Project filters are controlled by script.js -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I'VE BUILT</p>
+                <h2>Featured <span>Projects</span></h2>
+                <p>A selection of my practical development projects.</p>
+            </div>
+
+            <!-- Clicking a filter shows matching project cards -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Resource Share -->
+                <article class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/resource-share.png.jpg"
+                             alt="Resource Share application preview">
+                        <span class="project-number">01</span>
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">FULL STACK PROJECT</p>
+                        <h3>Resource Share</h3>
+
+                        <p>
+                            A resource-sharing platform concept where users can
+                            list resources for rent and discover resources
+                            that meet their needs.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/Sahillaur/resourceshare"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Project 2: Personal portfolio -->
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/portfolio.png.jpg"
+                             alt="Personal portfolio website preview">
+                        <span class="project-number">02</span>
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">FRONTEND PROJECT</p>
+                        <h3>My Portfolio</h3>
+
+                        <p>
+                            A responsive personal website showcasing my
+                            technical skills, projects, coding profiles
+                            and contact information.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <!-- Replace this URL with the portfolio repository URL
+                             after you create or identify that repository -->
+                        <a href="https://github.com/Sahillaur/myportfolio"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Project 3: Food ordering application -->
+                <article class="project-card" data-category="java">
+                    <div class="project-image">
+                        <img src="assets/food-ordering.png.jpg"
+                             alt="Food ordering application preview">
+                        <span class="project-number">03</span>
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">FULL STACK PROJECT</p>
+                        <h3>Food Ordering System</h3>
+
+                        <p>
+                            A food ordering application with login and
+                            registration flows and a frontend connected
+                            to a backend service.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <!-- Replace this URL with the exact project repository -->
+                        <a href="https://github.com/Sahillaur/FoodOrderingSystem"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT / CONNECT ================= -->
+        <!-- All links open the relevant contact or coding profile -->
+        <section id="connect" class="section">
+            <div class="connect-card">
+                <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+
+                <h2>Let's <span>Connect</span></h2>
+
+                <p>
+                    I'm interested in learning, collaborating and building
+                    useful software. Find me on these platforms.
+                </p>
+
+                <div class="connect-links">
+                    <a href="https://github.com/Sahillaur"
+                       target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                    <a href="https://www.linkedin.com/in/sahil-laur-2730983bb"
+                       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+                    <a href="https://leetcode.com/u/sahil_laur/"
+                       target="_blank" rel="noopener noreferrer">LeetCode ↗</a>
+
+                    <a href="https://www.codechef.com/users/sahil_laur123"
+                       target="_blank" rel="noopener noreferrer">CodeChef ↗</a>
+
+                    <a href="mailto:sanjeevlaur9758@gmail.com">
+                        Email Me ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>Designed and built by Sahil Laur</p>
+        <p>© <span id="currentYear"></span> All rights reserved.</p>
+    </footer>
+
+    <!-- Button appears when the user scrolls down -->
+    <button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+
+    <!-- External JavaScript file adds interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
